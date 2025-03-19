@@ -8,18 +8,53 @@ const FAQ = () => {
   const faqs = [
     {
       id: 1,
-      question: 'How do I book a service?',
-      answer: 'You can book a service by clicking the "Book Now" button on the service card.',
+      question: 'How do I make a booking?',
+      answer: 'You can make a booking by selecting your desired service, choosing a date and time, and completing the payment process.',
     },
     {
       id: 2,
       question: 'What payment methods do you accept?',
-      answer: 'We accept all major credit cards and PayPal.',
+      answer: 'We accept all major credit cards, PayPal, and other popular payment methods.',
     },
     {
       id: 3,
       question: 'Can I cancel my booking?',
       answer: 'Yes, you can cancel your booking up to 24 hours before the scheduled time.',
+    },
+    {
+      id: 4,
+      question: 'Is there a cancellation fee?',
+      answer: 'No, there is no cancellation fee if you cancel within the allowed time frame (24 hours before the scheduled time).',
+    },
+    {
+      id: 5,
+      question: 'Can I reschedule my booking?',
+      answer: 'Yes, you can reschedule your booking up to 12 hours before the scheduled time. Please contact us for assistance.',
+    },
+    {
+      id: 6,
+      question: 'What happens if I miss my booking?',
+      answer: 'If you miss your booking without prior cancellation, the full amount may be charged. Please contact us for further assistance.',
+    },
+    {
+      id: 7,
+      question: 'Do you offer refunds?',
+      answer: 'Refunds are provided only if the service is canceled by us or if there is a technical issue on our end. Please refer to our refund policy for more details.',
+    },
+    {
+      id: 8,
+      question: 'How do I contact customer support?',
+      answer: 'You can contact our customer support team via email at support@example.com or call us at +123-456-7890.',
+    },
+    {
+      id: 9,
+      question: 'Are there any discounts available?',
+      answer: 'Yes, we offer discounts for first-time users and seasonal promotions. Check our website or subscribe to our newsletter for updates.',
+    },
+    {
+      id: 10,
+      question: 'Can I book for multiple people?',
+      answer: 'Yes, you can book for multiple people. Simply select the number of participants during the booking process.',
     },
   ];
 
@@ -30,7 +65,8 @@ const FAQ = () => {
   return (
     <div id="faq" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 relative inline-block ">Frequently Asked Questions</h2>
+        
         <div className="flex flex-col lg:flex-row gap-8">
           {/* FAQ List */}
           <div className="w-full lg:w-1/2 space-y-4">
