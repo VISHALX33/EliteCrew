@@ -23,6 +23,15 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-4">
+        <li>
+            <Link 
+              to="/jobs" 
+              className="text-white hover:text-gray-200 transition duration-300 relative group"
+            >
+              Jobs
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+          </li>
           <li>
             <Link 
               to="/about" 

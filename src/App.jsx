@@ -10,6 +10,7 @@ import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import SignupLogin from './components/SignupLogin'; // Import the SignupLogin component
+import Job from './components/job';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Landing />
                 <Services />
                 <Team />
+                <Job/>
                 <Testimonials />
                 <FAQ />
                 <Footer />
@@ -60,6 +62,16 @@ function App() {
             element={
               <>
                 <ContactUs />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/jobs"
+            element={
+              <>
+                <Job />
                 <Footer />
               </>
             }
