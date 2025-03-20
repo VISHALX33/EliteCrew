@@ -1,5 +1,12 @@
 import React from 'react';
-import vishal from '../assets/vishal.jpg'; // Import the local image
+import Caretaker from '../assets/Caretaker.jpg'; // Import the local image
+import babySitter from '../assets/babySitter.jpg'
+import DogWalker from '../assets/DogWalker.avif'
+import plantSitter from '../assets/plantSitter.jpg'
+import Tutor from '../assets/Tutor.jpeg'
+import ContentWriter from '../assets/ContentWriter.jpg'
+import PersonalChef from '../assets/PersonalChef.png'
+import DataEntry from '../assets/DataEntry.jpg'
 
 const Services = () => {
   const services = [
@@ -8,7 +15,7 @@ const Services = () => {
       name: 'Babysitter',
       description: 'Professional babysitting services to take care of your children with love and care.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: babySitter, // Use the imported image here
       icon: '👶',
     },
     {
@@ -16,7 +23,7 @@ const Services = () => {
       name: 'Dog Walker',
       description: 'Reliable dog walking services to keep your furry friends happy and healthy.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: DogWalker, // Use the imported image here
       icon: '🐕',
     },
     {
@@ -24,7 +31,7 @@ const Services = () => {
       name: 'Plant Sitter',
       description: 'Expert plant care services to keep your plants thriving while you’re away.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: plantSitter, // Use the imported image here
       icon: '🌿',
     },
     {
@@ -32,7 +39,7 @@ const Services = () => {
       name: 'Tutor',
       description: 'Qualified tutors for personalized learning in various subjects and skills.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: Tutor, // Use the imported image here
       icon: '📚',
     },
     {
@@ -40,7 +47,7 @@ const Services = () => {
       name: 'Content Writer',
       description: 'Professional content writing services for blogs, websites, and marketing materials.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: ContentWriter, // Use the imported image here
       icon: '✍️',
     },
     {
@@ -48,7 +55,7 @@ const Services = () => {
       name: 'Personal Chef',
       description: 'Experienced personal chefs to prepare delicious meals tailored to your preferences.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: PersonalChef, // Use the imported image here
       icon: '👨‍🍳',
     },
     {
@@ -56,7 +63,7 @@ const Services = () => {
       name: 'Data Entry',
       description: 'Accurate and efficient data entry services for your business needs.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: DataEntry, // Use the imported image here
       icon: '💻',
     },
     {
@@ -64,7 +71,7 @@ const Services = () => {
       name: 'Caretaker',
       description: 'Compassionate caretaking services for the elderly or those in need of assistance.',
       link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
-      image: vishal, // Use the imported image here
+      image: Caretaker, // Use the imported image here
       icon: '👵',
     },
   ];
@@ -95,7 +102,7 @@ const Services = () => {
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <a
                   href={service.link}
-                  className="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-600 hover:via-pink-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105"
+                  className="inline-block bg-amber-400 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-600 hover:via-pink-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105"
                 >
                   Book Now
                 </a>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import vishal from '../assets/vishal.jpg';
+import FAQ1 from '../assets/FAQ.webp';
+
 
 
 const FAQ = () => {
@@ -92,7 +94,7 @@ const FAQ = () => {
           {/* Image Section */}
           <div className="w-full lg:w-1/2 flex items-center justify-center">
             <img
-              src= {vishal} // Replace with your image URL
+              src= {FAQ1} // Replace with your image URL
               alt="FAQ Illustration"
               className="rounded-lg shadow-lg h-full w-full "
             />

@@ -2,7 +2,7 @@ import React from 'react';
 import jobImage from '../assets/job.avif'
 const Job = () => {
   const handleClick = () => {
-    window.location.href = 'https://sparkling-croquembouche-4b817a.netlify.app/'; // Replace with your desired link
+    window.location.href = 'https://gleeful-gelato-40913a.netlify.app/'; // Replace with your desired link
   };
 
   return (<>
@@ -20,7 +20,7 @@ const Job = () => {
         </p>
         <button
           onClick={handleClick}
-          className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-purple-700 transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
+          className="px-8 py-4 bg-amber-400 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-purple-700 transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
         >
           Apply for Job
         </button>
