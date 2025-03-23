@@ -9,8 +9,9 @@ import FAQ from './components/FAQ';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
-import SignupLogin from './components/SignupLogin'; // Import the SignupLogin component
+import SignupLogin from './components/SignupLogin';
 import Job from './components/job';
+import BackToTop from './components/BackToTop'; // Import the BackToTop component
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
                 <Landing />
                 <Services />
                 <Team />
-                <Job/>
+                <Job />
                 <Testimonials />
                 <FAQ />
                 <Footer />
@@ -46,10 +47,7 @@ function App() {
           />
 
           {/* About Us Page */}
-          <Route
-            path="/about"
-            element={
-              <>
+          <Route path="/about" element={ <>
                 <AboutUs />
                 <Footer />
               </>
@@ -57,20 +55,14 @@ function App() {
           />
 
           {/* Contact Us Page */}
-          <Route
-            path="/contact"
-            element={
-              <>
+          <Route path="/contact" element={ <>
                 <ContactUs />
                 <Footer />
               </>
             }
           />
 
-          <Route
-            path="/jobs"
-            element={
-              <>
+          <Route path="/jobs" element={ <>
                 <Job />
                 <Footer />
               </>
@@ -88,6 +80,7 @@ function App() {
             }
           />
         </Routes>
+        <BackToTop /> {/* Add the BackToTop component here */}
       </div>
     </Router>
   );

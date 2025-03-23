@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import vishal from '../assets/vishal.jpg';
 import FAQ1 from '../assets/FAQ.webp';
 
 
@@ -80,7 +79,7 @@ const FAQ = () => {
               >
                 <h3 className="text-xl font-bold text-gray-800 flex justify-between items-center">
                   {faq.question}
-                  <span className="text-pink-500">
+                  <span className="text-amber-400">
                     {activeId === faq.id ? '▲' : '▼'}
                   </span>
                 </h3>

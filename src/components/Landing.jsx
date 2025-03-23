@@ -10,13 +10,9 @@ const Landing = () => {
   };
 
   return (
-    <div className="relative h-screen flex items-center justify-center">
+    <div className="relative h-screen flex bg-amber-100 items-center justify-center">
       {/* Background Image */}
-      <img
-        // src={landing} // Use the imported image
-        alt="Landing"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      
 
       {/* Overlay for better text visibility */}
       <div className="absolute inset-0  bg-opacity-50"></div>
@@ -27,7 +23,7 @@ const Landing = () => {
         <p className="text-xl md:text-2xl mb-8">Your one-stop solution for all your needs.</p>
         <button
           onClick={handleGetStarted}
-          className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-600 hover:via-pink-600 hover:to-red-600 transition-all duration-300"
+          className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-500 transition-all duration-300"
         >
           Get Started
         </button>
