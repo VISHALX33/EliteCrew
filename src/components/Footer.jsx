@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa'; // Import Font Awesome icons
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -9,11 +10,6 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="text-center md:text-left">
             <p className='text-6xl'>EliteCrew</p>
-            {/* <img
-              src="https://via.placeholder.com/150" // Replace with your logo URL
-              alt="Logo"
-              className="w-24 h-24 mx-auto md:mx-0 mb-4"
-            /> */}
             <br />
             <br />
             <p className="text-sm">
@@ -21,21 +17,21 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links - Updated with Link components */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-gray-200">Home</a>
+                <Link to="/" className="hover:text-gray-200">Home</Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-gray-200">About Us</a>
+                <Link to="/about" className="hover:text-gray-200">About Us</Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-gray-200">Services</a>
+                <Link to="/services" className="hover:text-gray-200">Services</Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-gray-200">Contact Us</a>
+                <Link to="/contact" className="hover:text-gray-200">Contact Us</Link>
               </li>
             </ul>
           </div>
