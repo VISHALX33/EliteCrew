@@ -14,7 +14,7 @@ const Services = () => {
       id: 1,
       name: 'Babysitter',
       description: 'Professional babysitting services to take care of your children with love and care.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: babySitter, // Use the imported image here
       icon: '👶',
     },
@@ -22,7 +22,7 @@ const Services = () => {
       id: 2,
       name: 'Dog Walker',
       description: 'Reliable dog walking services to keep your furry friends happy and healthy.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: DogWalker, // Use the imported image here
       icon: '🐕',
     },
@@ -30,7 +30,7 @@ const Services = () => {
       id: 3,
       name: 'Plant Sitter',
       description: 'Expert plant care services to keep your plants thriving while you’re away.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: plantSitter, // Use the imported image here
       icon: '🌿',
     },
@@ -38,7 +38,7 @@ const Services = () => {
       id: 4,
       name: 'Tutor',
       description: 'Qualified tutors for personalized learning in various subjects and skills.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: Tutor, // Use the imported image here
       icon: '📚',
     },
@@ -46,7 +46,7 @@ const Services = () => {
       id: 5,
       name: 'Content Writer',
       description: 'Professional content writing services for blogs, websites, and marketing materials.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: ContentWriter, // Use the imported image here
       icon: '✍️',
     },
@@ -54,7 +54,7 @@ const Services = () => {
       id: 6,
       name: 'Personal Chef',
       description: 'Experienced personal chefs to prepare delicious meals tailored to your preferences.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: PersonalChef, // Use the imported image here
       icon: '👨‍🍳',
     },
@@ -62,7 +62,7 @@ const Services = () => {
       id: 7,
       name: 'Data Entry',
       description: 'Accurate and efficient data entry services for your business needs.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: DataEntry, // Use the imported image here
       icon: '💻',
     },
@@ -70,7 +70,7 @@ const Services = () => {
       id: 8,
       name: 'Caretaker',
       description: 'Compassionate caretaking services for the elderly or those in need of assistance.',
-      link: 'https://sparkling-croquembouche-4b817a.netlify.app/',
+      link: 'https://elitecustomer.netlify.app/',
       image: Caretaker, // Use the imported image here
       icon: '👵',
     },

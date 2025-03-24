@@ -2,7 +2,7 @@ import React from 'react';
 import jobImage from '../assets/job.avif'
 const Job = () => {
   const handleClick = () => {
-    window.location.href = 'https://gleeful-gelato-40913a.netlify.app/'; // Replace with your desired link
+    window.location.href = 'https://eliteworkers.netlify.app/'; // Replace with your desired link
   };
 
   return (<>
