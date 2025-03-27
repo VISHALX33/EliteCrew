@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import FAQ1 from '../assets/FAQ.webp';
 
-
-
 const FAQ = () => {
   const [activeId, setActiveId] = useState(null);
 
@@ -57,6 +55,7 @@ const FAQ = () => {
       question: 'Can I book for multiple people?',
       answer: 'Yes, you can book for multiple people. Simply select the number of participants during the booking process.',
     },
+    // ... rest of your FAQ items
   ];
 
   const toggleAnswer = (id) => {
@@ -64,38 +63,55 @@ const FAQ = () => {
   };
 
   return (
-    <div id="faq" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 relative inline-block ">Frequently Asked Questions</h2>
+    <div id="faq" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <h2 className="text-5xl font-bold text-center mb-16 text-gray-800 relative">
+          Frequently Asked <span className="text-amber-500">Questions</span>
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-amber-400 rounded-full"></span>
+        </h2>
         
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-12">
           {/* FAQ List */}
-          <div className="w-full lg:w-1/2 space-y-4">
+          <div className="w-full lg:w-1/2 space-y-6">
             {faqs.map((faq) => (
               <div
                 key={faq.id}
-                className="bg-white p-6 rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-300"
+                className={`bg-white p-8 rounded-xl shadow-lg cursor-pointer transition-all duration-500 overflow-hidden ${
+                  activeId === faq.id 
+                    ? 'ring-2 ring-amber-400 shadow-xl' 
+                    : 'hover:shadow-xl hover:-translate-y-1'
+                }`}
                 onClick={() => toggleAnswer(faq.id)}
               >
                 <h3 className="text-xl font-bold text-gray-800 flex justify-between items-center">
-                  {faq.question}
-                  <span className="text-amber-400">
-                    {activeId === faq.id ? '▲' : '▼'}
+                  <span className="mr-4">{faq.question}</span>
+                  <span className={`text-amber-500 transition-transform duration-300 ${
+                    activeId === faq.id ? 'rotate-180' : ''
+                  }`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
                   </span>
                 </h3>
-                {activeId === faq.id && (
-                  <p className="mt-4 text-gray-600">{faq.answer}</p>
-                )}
+                <div className={`transition-all duration-500 ease-in-out ${
+                  activeId === faq.id 
+                    ? 'mt-6 opacity-100 max-h-96' 
+                    : 'opacity-0 max-h-0 overflow-hidden'
+                }`}>
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                </div>
               </div>
             ))}
           </div>
 
           {/* Image Section */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <div className="w-full lg:w-1/2 flex items-center justify-center relative">
+            <div className="absolute -top-8 -left-8 w-32 h-32 bg-amber-400 rounded-full opacity-20 blur-xl"></div>
+            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-purple-400 rounded-full opacity-20 blur-xl"></div>
             <img
-              src= {FAQ1} // Replace with your image URL
+              src={FAQ1}
               alt="FAQ Illustration"
-              className="rounded-lg shadow-lg h-full w-full "
+              className="rounded-2xl shadow-2xl h-auto w-full max-w-lg transform hover:scale-105 transition-transform duration-700"
             />
           </div>
         </div>
