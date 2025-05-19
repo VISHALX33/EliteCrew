@@ -23,6 +23,15 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-4">
+          <li>
+            <Link 
+              to="/services" 
+              className="text-black text-xl font-semibold hover:text-gray-200 transition duration-300 relative group"
+            >
+              Services
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+          </li>
         <li>
             <Link 
               to="/jobs" 
@@ -50,7 +59,7 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link 
               to="/signup-login" 
               onClick={handleGetStarted} 
@@ -58,7 +67,7 @@ const Navbar = () => {
             >
               Get Started
             </Link>
-          </li>
+          </li> */}
         </ul>
 
         {/* Mobile Menu Button */}
@@ -87,6 +96,15 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden mt-4">
           <ul className="flex flex-col space-y-2">
+            <li>
+            <Link 
+              to="/services" 
+              className="text-black text-xl font-semibold hover:text-gray-200 transition duration-300 relative group"
+            >
+              Services
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+          </li>
           <li>
             <Link 
               to="/jobs" 
@@ -114,7 +132,7 @@ const Navbar = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
-            <li>
+            {/* <li>
             <Link 
               to="/signup-login" 
               onClick={handleGetStarted} 
@@ -122,7 +140,7 @@ const Navbar = () => {
             >
               Get Started
             </Link>
-          </li>
+          </li> */}
           </ul>
         </div>
       )}

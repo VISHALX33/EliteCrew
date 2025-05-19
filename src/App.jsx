@@ -36,50 +36,19 @@ function App() {
           />
 
           {/* Services Page */}
-          <Route
-            path="/services"
-            element={
-              <>
-                <Services />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/services"element={<><Services /><Footer /></>}/>
 
           {/* About Us Page */}
-          <Route path="/about" element={ <>
-                <AboutUs />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/about" element={ <> <AboutUs /><Footer /></>}/>
 
           {/* Contact Us Page */}
-          <Route path="/contact" element={ <>
-                <ContactUs />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/contact" element={ <> <ContactUs /> <Footer /></>}/>
 
-          <Route path="/jobs" element={ <>
-                <Job />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/jobs" element={ <><Job /> <Footer /></>}/>
 
           {/* Signup/Login Page */}
           <Route
-            path="/signup-login"
-            element={
-              <>
-                <SignupLogin />
-                <Footer />
-              </>
-            }
-          />
-        </Routes>
+            path="/signup-login" element={<> <SignupLogin /><Footer /> </>}/></Routes>
         <BackToTop /> {/* Add the BackToTop component here */}
       </div>
     </Router>

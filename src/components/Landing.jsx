@@ -22,13 +22,13 @@ const Landing = () => {
         <p className="text-2xl md:text-3xl mb-12 text-gray-700 font-medium animate-fadeIn delay-100">
           Your premium solution for all service needs
         </p>
-        <button
+        {/* <button
           onClick={handleGetStarted}
           className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-10 py-4 rounded-xl font-bold text-xl hover:from-amber-600 hover:to-amber-700 transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl shadow-amber-500/30 animate-fadeIn delay-200"
         >
           Get Started
           <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 opacity-0 hover:opacity-100 transition-opacity duration-500"></span>
-        </button>
+        </button> */}
       </div>
 
       {/* Add these animations to your global CSS */}
